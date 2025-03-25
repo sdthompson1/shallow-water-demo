@@ -19,7 +19,7 @@ more recent Visual Studio version, although Visual Studio should offer
 to do this automatically.)
 
 To run the compiled exe, make sure you set Working Directory to 
-"$(SolutionDir)\..", otherwise the data files will not be found.
+"$(SolutionDir)\\..", otherwise the data files will not be found.
 
 
 # Roadmap
