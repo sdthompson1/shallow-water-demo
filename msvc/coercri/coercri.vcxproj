@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}</ProjectGuid>
+    <RootNamespace>coercri</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\guichan_0.8.1\include;$(SolutionDir)\coercri_shaders\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\guichan_0.8.1\include;$(SolutionDir)\coercri_shaders\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\coercri\dx11\core\load_dx11_dlls.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\bitmap_font.cpp" />
+    <ClCompile Include="..\..\coercri\gcn\cg_font.cpp" />
+    <ClCompile Include="..\..\coercri\gcn\cg_graphics.cpp" />
+    <ClCompile Include="..\..\coercri\gcn\cg_image.cpp" />
+    <ClCompile Include="..\..\coercri\gcn\cg_input.cpp" />
+    <ClCompile Include="..\..\coercri\gcn\cg_listener.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\gfx\dx11_gfx_context.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\gfx\dx11_gfx_driver.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\gfx\dx11_graphic.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\gfx\dx11_window.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\core\dx_error.cpp" />
+    <ClCompile Include="..\..\coercri\timer\generic_timer.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\gfx_context.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\key_name.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\load_bmp.cpp" />
+    <ClCompile Include="..\..\coercri\dx11\gfx\primitive_batch.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\region.cpp" />
+    <ClCompile Include="..\..\coercri\gfx\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\coercri\dx11\core\load_dx11_dlls.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\bitmap_font.hpp" />
+    <ClInclude Include="..\..\coercri\gcn\cg_font.hpp" />
+    <ClInclude Include="..\..\coercri\gcn\cg_graphics.hpp" />
+    <ClInclude Include="..\..\coercri\gcn\cg_image.hpp" />
+    <ClInclude Include="..\..\coercri\gcn\cg_input.hpp" />
+    <ClInclude Include="..\..\coercri\gcn\cg_listener.hpp" />
+    <ClInclude Include="..\..\coercri\core\coercri_error.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\color.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\core\com_ptr_wrapper.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\gfx\dx11_gfx_context.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\gfx\dx11_gfx_driver.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\gfx\dx11_graphic.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\gfx\dx11_window.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\core\dx_error.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\font.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\kern_table.hpp" />
+    <ClInclude Include="..\..\coercri\timer\generic_timer.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\gfx_context.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\gfx_driver.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\graphic.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\key_code.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\load_bmp.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\mouse_button.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\pixel_array.hpp" />
+    <ClInclude Include="..\..\coercri\dx11\gfx\primitive_batch.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\rectangle.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\region.hpp" />
+    <ClInclude Include="..\..\coercri\timer\timer.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\window.hpp" />
+    <ClInclude Include="..\..\coercri\gfx\window_listener.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.55.0.16\build\native\boost.targets" Condition="Exists('..\packages\boost.1.55.0.16\build\native\boost.targets')" />
+  </ImportGroup>
+</Project>

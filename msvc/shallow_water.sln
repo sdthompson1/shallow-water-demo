@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shallow_water", "shallow_water\shallow_water.vcxproj", "{F4B393AC-7A44-4CE7-8AC6-F119FB0A7761}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BB69F290-BD44-40B8-8D00-E1B91A751916} = {BB69F290-BD44-40B8-8D00-E1B91A751916}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coercri", "coercri\coercri.vcxproj", "{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC} = {E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "guichan", "guichan\guichan.vcxproj", "{A5D595F8-0620-4690-AD47-2436873F8DBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coercri_shaders", "coercri_shaders\coercri_shaders.vcxproj", "{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shaders", "shaders\shaders.vcxproj", "{BB69F290-BD44-40B8-8D00-E1B91A751916}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B393AC-7A44-4CE7-8AC6-F119FB0A7761}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4B393AC-7A44-4CE7-8AC6-F119FB0A7761}.Debug|Win32.Build.0 = Debug|Win32
+		{F4B393AC-7A44-4CE7-8AC6-F119FB0A7761}.Release|Win32.ActiveCfg = Release|Win32
+		{F4B393AC-7A44-4CE7-8AC6-F119FB0A7761}.Release|Win32.Build.0 = Release|Win32
+		{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}.Debug|Win32.Build.0 = Debug|Win32
+		{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}.Release|Win32.ActiveCfg = Release|Win32
+		{055E8E8F-BFE8-477C-AB81-85D06D3B7B1C}.Release|Win32.Build.0 = Release|Win32
+		{A5D595F8-0620-4690-AD47-2436873F8DBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A5D595F8-0620-4690-AD47-2436873F8DBE}.Debug|Win32.Build.0 = Debug|Win32
+		{A5D595F8-0620-4690-AD47-2436873F8DBE}.Release|Win32.ActiveCfg = Release|Win32
+		{A5D595F8-0620-4690-AD47-2436873F8DBE}.Release|Win32.Build.0 = Release|Win32
+		{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}.Debug|Win32.Build.0 = Debug|Win32
+		{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}.Release|Win32.ActiveCfg = Release|Win32
+		{E4FD13C0-7B7B-4DAD-9574-9A0964AD70CC}.Release|Win32.Build.0 = Release|Win32
+		{BB69F290-BD44-40B8-8D00-E1B91A751916}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB69F290-BD44-40B8-8D00-E1B91A751916}.Debug|Win32.Build.0 = Debug|Win32
+		{BB69F290-BD44-40B8-8D00-E1B91A751916}.Release|Win32.ActiveCfg = Release|Win32
+		{BB69F290-BD44-40B8-8D00-E1B91A751916}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

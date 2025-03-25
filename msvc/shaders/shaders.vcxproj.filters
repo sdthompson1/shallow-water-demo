@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Simulation shaders">
+      <UniqueIdentifier>{19f1da57-4c2a-4a67-9a32-09d79c1e4d0e}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Graphics shaders">
+      <UniqueIdentifier>{47c094bf-f418-40e0-83a5-28d29a39aab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mouse shaders">
+      <UniqueIdentifier>{68b13955-bf34-4cb1-9d40-f0a9143f8f6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\shaders\EastBoundary.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\GetStats.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\NorthBoundary.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\Pass1.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\Pass2.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\Pass3.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\SimVertexShader.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\SouthBoundary.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\WestBoundary.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\kp07.hlsl">
+      <Filter>Simulation shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\graphics.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\SkyboxPixelShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\SkyboxVertexShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\TerrainPixelShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\TerrainVertexShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\WaterPixelShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\WaterVertexShader.hlsl">
+      <Filter>Graphics shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\left_mouse.hlsl">
+      <Filter>Mouse shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\LeftMousePixelShader.hlsl">
+      <Filter>Mouse shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\LeftMouseVertexShader.hlsl">
+      <Filter>Mouse shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

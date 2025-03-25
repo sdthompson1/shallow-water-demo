@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="HLSL Files">
+      <UniqueIdentifier>{1e925af1-45bf-421f-9799-645243211766}</UniqueIdentifier>
+      <Extensions>hlsl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\coercri\dx11\gfx\primitive_batch_ps.hlsl">
+      <Filter>HLSL Files</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\coercri\dx11\gfx\primitive_batch_ps_tex.hlsl">
+      <Filter>HLSL Files</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\coercri\dx11\gfx\primitive_batch_vs.hlsl">
+      <Filter>HLSL Files</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\coercri\dx11\gfx\primitive_batch_common.hlsl">
+      <Filter>HLSL Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
