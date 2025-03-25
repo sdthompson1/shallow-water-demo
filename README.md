@@ -38,22 +38,22 @@ create the buttons and sliders at the right-hand side of the screen.
 3) Shallow_Water -- This is the main project containing the shallow
 water simulations. Briefly, the main files are as follows:
 
- - engine.cpp -- Main "engine" for the simulation, contains all the
-   code that drives the GPU. The bulk of the code is found here.
+   - engine.cpp -- Main "engine" for the simulation, contains all the
+     code that drives the GPU. The bulk of the code is found here.
 
- - kp07.hlsl -- Contains shaders for doing the numerical simulation of
-   the shallow water equations on the GPU.
+   - kp07.hlsl -- Contains shaders for doing the numerical simulation of
+     the shallow water equations on the GPU.
 
- - shallow_water.fx -- Contains shaders for creating the graphical
-   appearance of the land and water surfaces.
+   - shallow_water.fx -- Contains shaders for creating the graphical
+     appearance of the land and water surfaces.
 
- - gui_manager.cpp -- Creates the GUI at the right-hand side of the
-   screen.
+   - gui_manager.cpp -- Creates the GUI at the right-hand side of the
+     screen.
 
- - settings.cpp -- Stores and manages simulation settings.
+   - settings.cpp -- Stores and manages simulation settings.
 
- - terrain_heightfield.cpp -- Contains formulas for determining the
-   shape of the terrain.
+   - terrain_heightfield.cpp -- Contains formulas for determining the
+     shape of the terrain.
 
 
 # Version History
